@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PROMIX 2100 — Engineered for Mastery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <span class="loader-brand">PROMIX</span>
+      <div class="loader-bar-wrap">
+        <div id="loader-bar"></div>
+      </div>
+      <span id="loader-percent">0%</span>
+    </div>
+  </div>
+
+  <!-- FIXED HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="header-logo">PROMIX</a>
+      <nav class="header-nav">
+        <a href="#">Power</a>
+        <a href="#">Design</a>
+        <a href="#">Specs</a>
+        <a href="#" class="nav-cta">Shop</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO — standalone 100vh -->
+  <section class="hero-standalone">
+    <div class="hero-content">
+      <span class="hero-label">001 / Introducing</span>
+      <h1 class="hero-heading">
+        <span class="hero-word">PROMIX</span>
+        <span class="hero-word">2100</span>
+      </h1>
+      <p class="hero-tagline">Engineered for Mastery</p>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <svg width="14" height="24" viewBox="0 0 14 24" fill="none">
+        <path d="M7 0v20M1 14l6 8 6-8" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CANVAS WRAP (fixed, full viewport) -->
+  <div class="canvas-wrap" id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- DARK OVERLAY (fixed, full viewport) -->
+  <div id="dark-overlay"></div>
+
+  <!-- MARQUEE (fixed, full viewport) -->
+  <div class="marquee-wrap" id="marquee-wrap" data-scroll-speed="-28">
+    <div class="marquee-text">
+      BLEND &nbsp;·&nbsp; CRUSH &nbsp;·&nbsp; CONQUER &nbsp;·&nbsp; PROMIX 2100 &nbsp;·&nbsp;
+      BLEND &nbsp;·&nbsp; CRUSH &nbsp;·&nbsp; CONQUER &nbsp;·&nbsp; PROMIX 2100 &nbsp;·&nbsp;
+      BLEND &nbsp;·&nbsp; CRUSH &nbsp;·&nbsp; CONQUER &nbsp;·&nbsp; PROMIX 2100 &nbsp;·&nbsp;
+    </div>
+  </div>
+
+  <!-- SCROLL CONTAINER — all animated sections live here -->
+  <div id="scroll-container">
+
+    <!-- SECTION 001: Power — left aligned -->
+    <section class="scroll-section section-content align-left"
+             data-enter="8" data-leave="24" data-animation="slide-left">
+      <div class="section-inner">
+        <span class="section-label">001 / Power</span>
+        <h2 class="section-heading">2,100<br>Watts</h2>
+        <p class="section-body">Peak motor performance that tears through ice, frozen fruit, and fibrous greens without hesitation. Professional-grade power in a countertop form.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 002: Precision — left aligned -->
+    <section class="scroll-section section-content align-left"
+             data-enter="22" data-leave="38" data-animation="slide-right">
+      <div class="section-inner">
+        <span class="section-label">002 / Precision</span>
+        <h2 class="section-heading">Six&#8209;Blade<br>System</h2>
+        <p class="section-body">Laser-hardened stainless steel blades engineered for vortex efficiency. Every revolution optimised for total emulsification.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 003: Capacity — left aligned -->
+    <section class="scroll-section section-content align-left"
+             data-enter="38" data-leave="54" data-animation="fade-up">
+      <div class="section-inner">
+        <span class="section-label">003 / Capacity</span>
+        <h2 class="section-heading">72oz<br>Jar</h2>
+        <p class="section-body">High-impact Tritan copolyester. BPA-free. Dishwasher safe. Built to handle the largest batch — from single servings to entertaining.</p>
+      </div>
+    </section>
+
+    <!-- STATS: dark overlay section -->
+    <section class="scroll-section section-stats"
+             data-enter="60" data-leave="76" data-animation="stagger-up">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-value="2100" data-decimals="0">0</span>
+            <span class="stat-suffix">W</span>
+          </div>
+          <span class="stat-label">Peak Motor Power</span>
+        </div>
+        <div class="stat">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-value="10" data-decimals="0">0</span>
+          </div>
+          <span class="stat-label">Variable Speeds</span>
+        </div>
+        <div class="stat">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-value="72" data-decimals="0">0</span>
+            <span class="stat-suffix">oz</span>
+          </div>
+          <span class="stat-label">Jar Capacity</span>
+        </div>
+        <div class="stat">
+          <div class="stat-number-wrap">
+            <span class="stat-number" data-value="5" data-decimals="0">0</span>
+            <span class="stat-suffix">yr</span>
+          </div>
+          <span class="stat-label">Warranty</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA: persists at end -->
+    <section class="scroll-section section-content align-left"
+             data-enter="82" data-leave="100" data-animation="scale-up" data-persist="true">
+      <div class="section-inner cta-inner">
+        <span class="section-label">004 / Yours</span>
+        <h2 class="cta-heading">Ready to<br>Master It?</h2>
+        <p class="cta-body">The PROMIX 2100. Now available in Brushed Steel and Matte Obsidian.</p>
+        <a href="#" class="cta-button">Shop the PROMIX 2100</a>
+        <span class="cta-price">From $449</span>
+      </div>
+    </section>
+
+  </div><!-- /scroll-container -->
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
