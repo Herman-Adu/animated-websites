@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/blender/index.html" },
+    { "source": "/(.*)", "destination": "/blender/$1" }
+  ]
+}
